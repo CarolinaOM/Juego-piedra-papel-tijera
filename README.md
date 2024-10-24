@@ -8,3 +8,4 @@ Tendras tres botones cada uno con sus respectiva figura y le podras dar clic al 
 
 Si quieres probar el juego desde la web ingresa [aqui](https://juego-piedra-papel-tijera.netlify.app)
  
+![piedra, papel, tijera](https://github.com/user-attachments/assets/81602899-4ed7-4801-bcad-48dab685b7da)
