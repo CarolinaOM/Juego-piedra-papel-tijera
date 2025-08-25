@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Juego Piedra Papel Tijera</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Juego Piedra Papel Tijera</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Pantalla de bienvenida -->
-  <div id="intro" class="pantalla">
-    <h2>¡Bienvenido/a!</h2>
-    <p>¿Listo para jugar Piedra, Papel o Tijera?</p>
-    <button onclick="empezarJuego()" id="empezar-btn">Empezar</button>
-  </div>
-
-  <!-- Juego principal -->
-  <main class="container" style="display: none;">
-    <h1>Piedra Papel Tijera</h1>
-
-    <section id="result">
-      <img id="maquina-img" src="img/piedra.png" alt="maquina">
-      <div id="star-text">Elige una opción para comenzar</div>
-      <img id="usuario-img" src="img/piedra.png" alt="usuario">
-    </section>
-
-    <section id="group-btn">
-      <button id="piedra" type="button">
-        <img src="img/piedra.png" alt="piedra">
-      </button>
-      <button id="papel" type="button">
-        <img src="img/papel.png" alt="papel">
-      </button>
-      <button id="tijera" type="button">
-        <img src="img/tijera.png" alt="tijera">
-      </button>
-    </section>
-
-    <div id="stats">
-      🟢 Ganadas: <span id="ganadas">0</span> |
-      🔴 Perdidas: <span id="perdidas">0</span> |
-      ⚪ Empates: <span id="empates">0</span>
+    <div id="intro" class="pantalla">
+        <h2>¡Bienvenido/a!</h2>
+        <p>¿Listo para jugar Piedra, Papel o Tijera?</p>
+        <button onclick="empezarJuego()" id="empezar-btn">Empezar</button>
     </div>
 
-    <button id="salir-btn">Salir</button>
+    <main class="container" style="display: none;">
+        <h1>Piedra Papel Tijera</h1>
 
-    <footer>Hecho por Carolina</footer>
-    <ul id="historial"></ul>
-  </main>
+        <section id="result">
+            <div class="opcion-container">
+                <p>Máquina</p>
+                <img id="maquina-img" src="img/piedra.png" alt="maquina">
+            </div>
+            <div class="opcion-container">
+                <p>Tú</p>
+                <img id="usuario-img" src="img/piedra.png" alt="usuario">
+            </div>
+        </section>
 
-  <script src="app.js"></script>
+        <div id="star-text">Elige una opción para comenzar</div>
+
+        <section id="group-btn">
+            <button id="piedra" type="button">
+                <img src="img/piedra.png" alt="piedra">
+            </button>
+            <button id="papel" type="button">
+                <img src="img/papel.png" alt="papel">
+            </button>
+            <button id="tijera" type="button">
+                <img src="img/tijera.png" alt="tijera">
+            </button>
+        </section>
+
+        <div id="stats">
+            🟢 Ganadas: <span id="ganadas">0</span> |
+            🔴 Perdidas: <span id="perdidas">0</span> |
+            ⚪ Empates: <span id="empates">0</span>
+        </div>
+
+        <button id="salir-btn">Salir</button>
+
+        <footer>Hecho por Carolina</footer>
+    </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
